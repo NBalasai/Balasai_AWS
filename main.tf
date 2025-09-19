@@ -1,10 +1,10 @@
 resource "aws_iam_user" "cloud" {
-  name = "cloud-institute-user"
+  name = "balasai"
 }
 
 resource "aws_iam_user" "cloud-count" {
   count = 5
-  name  = "cloud-institute-user-${count.index + 1}"
+  name  = "balasai-${count.index + 1}"
 }
 
 resource "aws_iam_user" "cloud-forset-user" {
